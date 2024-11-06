@@ -2,19 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:news/app_theme.dart';
 
 class TabItem extends StatelessWidget {
-  TabItem({
+  const TabItem({
+    super.key,
     required this.sourceName,
     required this.isSelected,
   });
 
-  String sourceName;
-  bool isSelected;
+  final String sourceName;
+  final bool isSelected;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 8),
-      padding: EdgeInsets.symmetric(vertical: 6, horizontal: 12),
+      margin: const EdgeInsets.symmetric(vertical: 8),
+      padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 12),
       decoration: BoxDecoration(
         color: isSelected ? AppTheme.primary : Colors.transparent,
         border: Border.all(

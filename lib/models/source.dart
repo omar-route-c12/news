@@ -1,6 +1,6 @@
 class Source {
-  String id;
-  String name;
+  final String id;
+  final String name;
 
-  Source({required this.id, required this.name});
+  const Source({required this.id, required this.name});
 }

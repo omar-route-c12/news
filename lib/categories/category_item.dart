@@ -2,13 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:news/models/category_model.dart';
 
 class CategoryItem extends StatelessWidget {
-  CategoryItem({
+  const CategoryItem({
+    super.key,
     required this.category,
     required this.index,
   });
 
-  CategoryModel category;
-  int index;
+  final CategoryModel category;
+  final int index;
 
   @override
   Widget build(BuildContext context) {
@@ -16,8 +17,8 @@ class CategoryItem extends StatelessWidget {
       decoration: BoxDecoration(
         color: category.color,
         borderRadius: BorderRadiusDirectional.only(
-          topStart: Radius.circular(25),
-          topEnd: Radius.circular(25),
+          topStart: const Radius.circular(25),
+          topEnd: const Radius.circular(25),
           bottomStart: Radius.circular(index.isEven ? 25 : 0),
           bottomEnd: Radius.circular(index.isOdd ? 25 : 0),
         ),

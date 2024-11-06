@@ -4,12 +4,12 @@ import 'package:news/categories/category_item.dart';
 import 'package:news/models/category_model.dart';
 
 class CategoriesGrid extends StatelessWidget {
-  CategoriesGrid({
+  const CategoriesGrid({
     super.key,
     required this.onCategorySelected,
   });
 
-  void Function(CategoryModel) onCategorySelected;
+  final void Function(CategoryModel) onCategorySelected;
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,7 @@ class CategoriesGrid extends StatelessWidget {
     );
 
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 24),
+      padding: const EdgeInsets.symmetric(horizontal: 24),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -40,7 +40,7 @@ class CategoriesGrid extends StatelessWidget {
           ),
           Expanded(
             child: GridView.builder(
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
                 mainAxisSpacing: 24,
                 crossAxisSpacing: 24,
