@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:news/models/sources_response/source.dart';
-import 'package:news/news/news_list.dart';
-import 'package:news/tabs/tab_item.dart';
+import 'package:news/sources/data/models/source.dart';
+import 'package:news/news/view/widgets/news_list.dart';
+import 'package:news/sources/view/widgets/tab_item.dart';
 
 class SourcesTabs extends StatefulWidget {
   const SourcesTabs(this.sources, {super.key});
@@ -23,6 +23,7 @@ class _SourcesTabsState extends State<SourcesTabs> {
           length: widget.sources.length,
           child: TabBar(
             onTap: (index) {
+              if (index == selectedTabIndex) return;
               selectedTabIndex = index;
               setState(() {});
             },
