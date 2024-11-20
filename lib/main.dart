@@ -11,11 +11,6 @@ class NewsApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final p1 = Person('ali');
-    final p2 = p1;
-    p1.name = 'ahmed';
-    print(p2.name);
-
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {
@@ -26,10 +21,4 @@ class NewsApp extends StatelessWidget {
       themeMode: ThemeMode.light,
     );
   }
-}
-
-class Person {
-  String name;
-
-  Person(this.name);
 }
