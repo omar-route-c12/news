@@ -14,37 +14,37 @@ class CategoriesGrid extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<CategoryModel> categories = [
-      CategoryModel(
+      const CategoryModel(
         id: 'sports',
         name: 'Sports',
         imageName: 'sports',
         color: AppTheme.red,
       ),
-      CategoryModel(
+      const CategoryModel(
         id: 'business',
         name: 'Business',
         imageName: 'sports',
         color: AppTheme.red,
       ),
-      CategoryModel(
+      const CategoryModel(
         id: 'sports',
         name: 'Sports',
         imageName: 'sports',
         color: AppTheme.red,
       ),
-      CategoryModel(
+      const CategoryModel(
         id: 'sports',
         name: 'Sports',
         imageName: 'sports',
         color: AppTheme.red,
       ),
-      CategoryModel(
+      const CategoryModel(
         id: 'sports',
         name: 'Sports',
         imageName: 'sports',
         color: AppTheme.red,
       ),
-      CategoryModel(
+      const CategoryModel(
         id: 'sports',
         name: 'Sports',
         imageName: 'sports',
